@@ -26,7 +26,6 @@ export const test = base.extend<LimsFixture>({
             const loginPage = new LoginPage(page);
             await loginPage.navigateToAndVisible();
             await loginPage.login(user.email, user.password);
-            console.log("PASSED: LOGIN");
         });
     },
 
